@@ -204,7 +204,7 @@ public class XO implements Runnable{
                     g.drawString(wonString, WIDTH / 2 - stringWidth / 2, HEIGHT / 2);
                     // add a button to return to the list
                     JButton btn = new JButton("Retour à la liste des défis");
-                    btn.setBounds(103, 213, 300, 100);
+                    btn.setBounds(103, 13, 300, 100);
 
                     // supprimer la ligne du fichier texte
                     if(role.equals("server")) {
@@ -247,7 +247,7 @@ public class XO implements Runnable{
                     int stringWidth = g2.getFontMetrics().stringWidth(enemyWonString);
                     g.drawString(enemyWonString, WIDTH / 2 - stringWidth / 2, HEIGHT / 2);
                     JButton btn = new JButton("Retour à la liste des défis");
-                    btn.setBounds(103, 213, 300, 100);
+                    btn.setBounds(103, 13, 300, 100);
                     if(role.equals("server")) {
                         Main.deleteLineFromFile(player2);
                         btn.setVisible(true);
@@ -292,7 +292,7 @@ public class XO implements Runnable{
                 int stringWidth = g2.getFontMetrics().stringWidth(tieString);
                 g.drawString(tieString, WIDTH / 2 - stringWidth / 2, HEIGHT / 2);
                 JButton btn = new JButton("Retour à la liste des défis");
-                btn.setBounds(103, 213, 300, 100);
+                btn.setBounds(103, 13, 300, 100);
 
                 if(role.equals("server")) {
                     Main.deleteLineFromFile(player2);
